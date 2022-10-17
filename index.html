@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilo.css" />
+    <title>Platzriv - Jueguito online de carreras y calaveras</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <canvas id="game"></canvas>
+      <div class="btns">
+        <button id="up">Arriba</button>
+        <button id="left">Izquierda</button>
+        <button id="right">Derecha</button>
+        <button id="down">Abajo</button>
+        
+      </div>
+      <div class="messages">
+        <p>VIDAS: <span id="vidas"></span></p>
+        <p>⏰: <span id="time"></span></p>
+        <p>RECORD: <span id="record"></span></p>
+
+      </div>
+    </div>
+    
+    <div class="container inactive">
+      <div id="ganador">
+        <h3 class="title">Terminaste el juego</h3>
+        <h4 class="title2">¡Bien hecho!</h4>
+        <p class="copa"><span>🏆</span></p>
+        <p  class="puntaje">Puntaje: <span id="puntaje"></span></p>
+        <p id="result"></p>
+        <button id="reiniciar">Nuevo juego</button>
+      </div>
+    </div>  
+      
+    <div class="container-lose inactive">
+      <div id="ganador">
+        <h3 class="calabera">☠</h3>
+        <h4 class="title">Te quedaste sin vidas!</h4>
+        <p class="title2">Vulve a intentarlo</p>
+        <div class="bot">
+          <button id="reiniciar2" class="ren">Reiniciar</button>
+        </div>
+      </div>
+    </div>
+    <script src="./mapa.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>
